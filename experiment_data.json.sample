@@ -1,0 +1,112 @@
+{
+	"controllers_count": 4,
+	"nodes_count": 14,
+	"backend": "redis",
+	"opts": {
+	
+	
+		
+		"rabbitmq_on_db_nodes": "False"
+		
+	
+		, 
+		"intercluster_latency": "10"
+		
+	
+		, 
+		"number_of_cluster": "3"
+		
+	
+		, 
+		"host_aggregate_multisite": "False"
+		
+	
+		, 
+		"distribute_db_load": "True"
+		
+	
+		, 
+		"redis_replication": "True"
+		
+	
+		, 
+		"number_of_database_nodes": "3"
+		
+	
+		, 
+		"dedicated_database_nodes": "True"
+		
+	
+	}, 
+	"infrastructure_description": {
+		"master_node": "taurus-4",
+		"controllers_nodes": [
+			
+			
+				
+				"taurus-9"
+				
+			
+				, 
+				"taurus-4"
+				
+			
+				, 
+				"taurus-8"
+				
+			
+				, 
+				"taurus-16"
+				
+			
+		],
+		"compute_nodes": [
+			
+			
+				
+				"orion-2"
+				
+			
+				, 
+				"taurus-15"
+				
+			
+				, 
+				"taurus-1"
+				
+			
+				, 
+				"orion-3"
+				
+			
+				, 
+				"orion-4"
+				
+			
+				, 
+				"orion-1"
+				
+			
+				, 
+				"taurus-3"
+				
+			
+		],
+		"database_nodes": [
+			
+			
+				
+				"taurus-11"
+				
+			
+				, 
+				"taurus-5"
+				
+			
+				, 
+				"taurus-7"
+				
+			
+		]
+	}
+}
